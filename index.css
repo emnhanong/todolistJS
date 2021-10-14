@@ -1,0 +1,123 @@
+.main{
+    max-width:1140px;
+    margin: auto;
+    margin-top: 50px;
+}
+h1{
+    font-size: 2.5rem;
+    padding: 20px 0px;
+}
+.input{
+    display: block;
+    width: 730px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.input:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.todo-list{
+    padding-left: 0px;
+    list-style: none;
+}
+.todo-list li{
+    border: 1px solid rgba(0,0,0,.125);
+    width: 540px;
+    padding: 1rem 1.25rem;
+    border-bottom: none;
+    position: relative;
+    cursor: pointer;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.todo-list li:first-child{
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.todo-list li:last-child{
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.todo{
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    padding: .375rem .75rem;
+    width: 445px;
+}
+.todo:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.main .trash{
+    position: absolute;
+    right: 10px;
+    color: #dc3545;
+    font-size: 24px;
+    top: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.main .trash:hover{
+    background: #dc3545;
+    color: #fff;
+}
+
+.main .edit{
+    position: absolute;
+    right: 55px;
+    font-size: 24px;
+    color: #007bff;
+    top: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.main .edit i{
+    text-decoration: none;
+}
+.main .edit:hover{
+    color: #fff;
+    background:#007bff;
+}
+
+.todo-list li:last-child{
+    border-bottom:1px solid rgba(0,0,0,.125) ;
+}
+.todo-list button{
+    background: none;
+    border: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+}
+.todo-list button:hover{
+    cursor: pointer;
+}
+.mystyle{
+    color:#495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline:0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    text-decoration: none;
+}
