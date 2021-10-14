@@ -113,11 +113,15 @@ h1{
 .todo-list button:hover{
     cursor: pointer;
 }
-.mystyle{
+.style{
     color:#495057;
     background-color: #fff;
     border-color: #80bdff;
     outline:0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
-    text-decoration: none;
+    /* text-decoration: none; */
+}
+.hidestyle{
+    border-color: unset;
+    box-shadow: none;
 }

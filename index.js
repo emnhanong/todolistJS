@@ -7,15 +7,12 @@ const ul = document.querySelector(".todo-list");
 
 
 
-
 form.addEventListener("submit", function(e) {
     // create element list todo
     const paragraph = document.createElement("li");
 
     //create element todo
     const text = document.createElement("input");
-
-
     text.type = "text";
     text.classList.add("todo");
     text.value = input.value;
@@ -55,16 +52,21 @@ form.addEventListener("submit", function(e) {
     // listen click edit todo
     text.disabled = "disabled";
     edit.addEventListener('click', function() {
-        text.disabled = !text.disabled
-        text.classList.toggle("mystyle");
-    } )
+        text.disabled = !text.disabled;
+        text.classList.add("style");
+        text.classList.remove("hidestyle");
+    })
 
+    text.addEventListener("blur", function() {
+        text.classList.add("hidestyle");
+        text.disabled = !text.disabled;
+    })
 
     // listen click line-through todo
     paragraph.addEventListener("click", function(e) {
-        if(text.disabled === true){
-            e.target.classList.toggle("line-through")
-        }  
+            if(text.disabled){
+                e.target.classList.toggle("line-through");
+            }
     })
  
     // reset value
@@ -72,8 +74,6 @@ form.addEventListener("submit", function(e) {
 
     // prevent submit
     e.preventDefault();
-
-
 
 })
 
